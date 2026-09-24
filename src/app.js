@@ -344,9 +344,6 @@ class TitanBot extends Client {
       cron.getTasks().forEach(task => task.stop());
       logger.info('✅ Cron jobs stopped');
 
-      logger.info('Stopping music players...');
-      await shutdownMusic(this);
-      logger.info('✅ Music players stopped');
 
       // Close database connection
       // Close database connection
