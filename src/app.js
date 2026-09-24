@@ -81,7 +81,6 @@ class TitanBot extends Client {
       await this.loadHandlers();
       startupLog('Handlers loaded');
 
-      initializeMusic(this);
       
       startupLog('Logging into Discord...');
       await this.login(this.config.bot.token);
