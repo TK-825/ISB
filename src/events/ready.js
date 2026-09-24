@@ -17,9 +17,6 @@ export default {
       startupLog(`Serving ${client.guilds.cache.size} guild(s)`);
       startupLog(`Loaded ${client.commands.size} commands`);
 
-      if (client.config?.features?.music) {
-        initRiffyAfterReady(client);
-      }
 
       const reconciliationSummary = await reconcileReactionRoleMessages(client);
       startupLog(
