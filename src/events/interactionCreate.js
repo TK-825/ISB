@@ -338,10 +338,6 @@ export default {
             errorCode: 'INTERACTION_ERROR_RESPONSE_FAILED',
             error: replyError,
             traceId: interactionTraceContext.traceId
-          });
-        }
-      }
-    });
   }
 };
     });
