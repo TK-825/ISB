@@ -8,7 +8,6 @@ import {
 } from '../utils/database.js';
 import { sanitizeInput } from '../utils/validation.js';
 import { logger } from '../utils/logger.js';
-import { handleMusicVoiceState } from '../services/music/musicVoiceState.js';
 
 const channelCreationCooldown = new Map();
 const VOICE_CREATE_COOLDOWN_MS = 2000;
